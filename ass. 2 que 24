@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int num, digit, rev = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    int temp = num;  // keep original number
+
+    while(temp > 0) {
+        digit = temp % 10;         // get last digit
+        rev = rev * 10 + digit;    // build reversed number
+        temp /= 10;                // remove last digit
+    }
+
+    printf("The reverse of %d is: %d\n", num, rev);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
