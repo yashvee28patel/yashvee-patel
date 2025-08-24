@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    printf("Printing my name 5 times:\n");
+
+    for(i = 1; i <= 5; i++) {
+        printf("%d. Yashvee Patel\n", i);  // replace with your name
+    }
