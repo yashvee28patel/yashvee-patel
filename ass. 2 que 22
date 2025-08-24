@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int num, count = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Handle case if number is 0
+    if(num == 0) {
+        count = 1;
+    } else {
+        while(num != 0) {
+            num = num / 10;  // remove last digit
+            count++;
+        }
+    }
+
+    printf("The number of digits is: %d\n", count);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ChatGPT can make mistakes. Check important info. See Cookie Preferences
