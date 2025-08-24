@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, value, sum = 0;
+    float mean;
+
+    printf("Enter how many numbers you want: ");
+    scanf("%d", &n);
+
+    printf("Enter %d numbers:\n", n);
+    for(i = 1; i <= n; i++) {
+        printf("Number %d: ", i);
+        scanf("%d", &value);
+        sum += value;
+    }
+
+    mean = sum / (float)n;   // mean = sum ÷ n
+
+    printf("\nThe sum of the %d numbers is: %d\n", n, sum);
+    printf("The mean of the %d numbers is: %.2f\n", n, mean);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
