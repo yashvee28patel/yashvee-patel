@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int i, sum = 0;
+
+    printf("Numbers from 1 to 100 divisible by 3 are:\n");
+
+    for(i = 1; i <= 100; i++) {
+        if(i % 3 == 0) {
+            printf("%d ", i);
+            sum += i;
+        }
+    }
+
+    printf("\n\nThe sum of these numbers is: %d\n", sum);
+
+    return 0;
+}
